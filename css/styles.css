@@ -11,7 +11,10 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
+* {
+  padding: 0;
+  margin: 0;
+}
 ul {
   list-style: none;
 }
@@ -27,6 +30,7 @@ a {
   letter-spacing: 0.03em;
   font-size: 26px;
   line-height: 1.9em;
+  margin: right 93px;
 }
 
 .blue-text {
@@ -41,7 +45,13 @@ a {
   font-size: 14px;
   line-height: 1em;
 }
+.nav-link.current {
+  color: var(--blue-color);
+}
 
+.site-nav {
+  display: flex;
+}
 .nav-link:hover,
 .nav-link:focus {
   color: var(--blue-color);
@@ -54,7 +64,10 @@ a {
   font-size: 14px;
   line-height: 1em;
 }
-
+.contact-link {
+  display: flex;
+  justify-content: flex-end;
+}
 .contact-link :hover,
 .contact-link:focus {
   color: var(--blue-color);
