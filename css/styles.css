@@ -30,13 +30,24 @@ a {
   letter-spacing: 0.03em;
   font-size: 26px;
   line-height: 1.9em;
-  margin: right 93px;
+  margin-right: 93px;
 }
 
 .blue-text {
   color: var(--blue-color);
 }
 /* Header */
+.header {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+}
 
 .nav-link {
   color: var(--text-color-black);
@@ -45,13 +56,18 @@ a {
   font-size: 14px;
   line-height: 1em;
 }
+.navigation {
+  display: flex;
+}
 .nav-link.current {
   color: var(--blue-color);
 }
 
 .site-nav {
   display: flex;
+  align-items: center;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--blue-color);
